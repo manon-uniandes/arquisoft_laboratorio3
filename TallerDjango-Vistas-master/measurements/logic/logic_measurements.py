@@ -15,3 +15,7 @@ def del_one_measurement(id):
 def mod_one_measurement(id, entry):
     measurement = Measurement.objects.select_related().filter(pk=id).update(value=entry)
     return measurement
+
+
+
+
