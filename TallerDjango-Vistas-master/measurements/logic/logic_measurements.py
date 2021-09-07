@@ -4,7 +4,7 @@ def get_all_measurements():
     measurements = Measurement.objects.all()
     return measurements
 
-def get_one_measurement(id, value):
+def get_one_measurement(id):
     measurement = Measurement.objects.get(pk=id)
     return measurement
 
